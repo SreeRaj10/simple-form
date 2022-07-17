@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Car Loan Form</title>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+
+
+    <div class="container">
+        <div class="header">
+        <h2>Registration form</h2>
+    </div>
+
+<form class="form" id="form">
+    <div class="form-control">
+        <label>Name :</label>
+        <input type="text" placeholder="textname" id="name">
+        <small>Error Message</small>
+    </div>
+    <div>
+        <p>Car Type :
+        <input type="radio" name="car type" value="new" checked>
+        <label>New Car</label>
+        <input type="radio" name="car type" value="preowned" checked>
+        <label>Pre-Owned</Pre-Owned></label>
+        
+        
+    </p>
+    </div>
+    <div>
+        <p>
+        <label>Car Price :</label>
+        <input type="text" placeholder="number" id="price" name="price">
+        
+        </p>
+        
+        <label>Amount Deposit :</label>
+        <input type="text" placeholder="123456" id="amount" name="amount">
+        
+        <br><br>
+        <label>Interest %:</label>
+        <input type="text" placeholder="123456" id="interest" name="interest">
+        <p>
+            
+        <label> Loan Tenure Year:</label>
+        <input type="number"  name="years" min="0" max="5" step="1" value="5">
+           
+        </p>
+            
+        
+        <br><br>        
+        <label>Total Amount :</label>
+        <input typr="text" id="total" name="total">
+        <div>
+            <button>
+                <input type="button" name="submit" value="Calculate" onclick="totalAmt()"/>
+            </button>
+        </div>
+        
+    </div>
+    <div>
+        <p>
+            <label>Loan Date: 
+            <input type="date" name="Loandate"></label>
+            </p>
+        <button>
+            <input type="button" name="submit" value="Submit" onclick="checkInput()"/>
+        </button>
+            
+    </div>
+
+</form>
+</div>
+<script src="javas.js" type="text/javaScript"></script>
+
+
+</body>
+<footer id="footer">
+    <div id="footer-content">This form made by Divyasree.P @copyright</div>
+</footer>
+</html>
